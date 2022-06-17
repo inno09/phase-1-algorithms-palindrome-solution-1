@@ -1,6 +1,33 @@
-function isPalindrome(word) {
+// function isPalindrome(word) {
   // Write your algorithm here
+  // reverse the input string
+  // if the reversed string is the same as the input
+  //   return true
+  // else
+  //   return false
+// function reverseString(word) {
+//   const wordArray = word.split("");
+//   const reversedWordArray = wordArray.reverse();
+//   const reversedWord = reversedWordArray.join("")
+//   return reversedWord
+// }
+// function isPalindrome(word) {
+//   const reversedWord = reverseString(word)
+//   if (word === reversedWord) {
+//     return true;
+//   }else {
+//     return false;
+//   } 
+// }
+
+function isPalindrome(word) {
+  const reversedWord = reverseString(word);
+  return word === reversedWord;
 }
+function reverseString(word) {
+  return word.split("").reverse().join("");
+}
+console.log (isPalindrome('mom'))
 
 /* 
   Add your pseudocode here
